@@ -1,0 +1,149 @@
+* 
+{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.header{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+}
+.menulogo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #222;
+    border-radius: 0px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logoimg{
+    width: 40px; /* Image will take 100% of the container's width */
+    height: auto; 
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: 690px; 
+    height: 50px;
+    background: #222;
+    border-radius: 0px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 23px;
+    z-index: 1;
+}
+
+nav .animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg,#4f1919,#ff3333);
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+a:nth-child(1){
+    width: 100px;
+}
+
+nav .start-home, a:nth-child(1):hover ~ .animation{
+    left: 0;
+    width: 100px;
+}
+
+a:nth-child(2){
+    width: 160px;
+}
+
+nav .start-aboutus, a:nth-child(2):hover ~ .animation{
+    left: 100px;
+    width: 160px;
+}
+
+a:nth-child(3){
+    width: 120px;
+}
+
+nav .start-services, a:nth-child(3):hover ~ .animation{
+    left: 260px;
+    width: 120px;
+}
+
+a:nth-child(4){
+    width: 120px;
+}
+
+nav .start-contact, a:nth-child(4):hover ~ .animation{
+    left: 380px;
+    width: 120px;
+}
+
+a:nth-child(5){
+    width: 190px;
+}
+
+nav .start-signin, a:nth-child(5):hover ~ .animation{
+    left: 500px;
+    width: 190px;
+}
+
+.search{
+    display: inline;
+    position: fixed;
+    top: 0;
+    left: 890px;
+    width: 300px;
+    height: 50px;
+    background: #222;
+    border-radius: 0px;
+    border: none;
+    align-items: center;
+}
+.searchbox {
+    margin-top: 20px;
+    display: inline;
+    position: fixed;
+    left: 890px;
+    width: 200px;
+    height: 25px;
+    background: #222;
+    border-radius: 0px;
+    border: none;
+    align-items: center;
+}
+
+.fas {
+    display: inline-block;
+}
